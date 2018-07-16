@@ -1,0 +1,14 @@
+@import "./reset.css";
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,500i,700");
+@import "./top-section.css";
+@import "./services.css";
+@import "./projects.css";
+
+body {
+  background: #eee;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+}

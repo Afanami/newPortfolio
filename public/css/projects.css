@@ -1,0 +1,61 @@
+#projects {
+  padding: 80px 15px;
+}
+
+#projects .title {
+  position: relative;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+#projects .title .square {
+  background: #ffeded;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 23px;
+}
+
+#projects .title h1 {
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #16171b;
+  letter-spacing: 4px;
+}
+
+#projects .projects-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 200px 200px 200px;
+  grid-gap: 10px;
+}
+
+#projects .projects-container .box {
+  background: rgb(19, 4, 4);
+  display: block;
+  transition: all 0.4s ease-in-out;
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+}
+
+#projects .projects-container .box:hover {
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 41px 74px 24px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 41px 74px 24px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 41px 74px 24px rgba(0, 0, 0, 0.08);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+#projects .projects-container .box.project1 {
+  background: yellow;
+  grid-column: 2 / 3;
+  grid-row: 1 / 4;
+}
