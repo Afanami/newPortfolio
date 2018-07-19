@@ -15,7 +15,7 @@
 #experience-section .experience-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 #experience-section .experience-container h2 {
@@ -219,4 +219,16 @@
 #experience-section .experience-container .info.work {
   position: relative;
   top: 20%;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+  #experience-section .experience-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
 }

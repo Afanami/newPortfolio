@@ -4,12 +4,24 @@
 @import "./services.css";
 @import "./projects.css";
 @import "./experience-section.css";
+@import "./footer-section.css";
 
+html,
 body {
-  background: #eee;
+  /*background: #eee;*/
+  width: 100%;
 }
 
 .container {
   max-width: 1150px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 960px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
 }

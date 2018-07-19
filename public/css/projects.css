@@ -1,5 +1,6 @@
 #projects {
   padding: 80px 15px;
+  background: #f9fafc;
 }
 
 #projects .title {
@@ -32,7 +33,7 @@
 #projects .projects-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 150px 250px 300px;
+  grid-template-rows: 200px 200px 200px;
   grid-gap: 10px;
 }
 
@@ -142,4 +143,28 @@
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+  #projects .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #projects .projects-container .box.project1,
+  #projects .projects-container .box.project2 {
+    margin-bottom: 40px;
+  }
+
+  #projects .projects-container .box.project1 .image,
+  #projects .projects-container .box.project2 .image,
+  #projects .projects-container .box.project3 .image {
+    height: 60vh;
+    background-position: top center;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
 }

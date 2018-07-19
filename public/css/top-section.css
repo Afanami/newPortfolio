@@ -1,5 +1,10 @@
 /* TOP SECTION STYLING */
 #top {
+  /* background-image: url(../img/back.jpg); */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
 }
 
 #top .container {
@@ -19,7 +24,7 @@
   width: 500px;
   height: 500px;
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   top: -70%;
   left: -50%;
 }
@@ -68,7 +73,34 @@
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  max-width: 310px;
+  max-width: 350px;
   height: 600px;
   margin: 0 auto;
+}
+
+/* Tablets */
+@media only screen and (max-width: 960px) {
+  #top .container {
+    padding: 0 0 80px;
+  }
+
+  #top .img .background-img {
+    height: 100vh;
+    max-width: 400px;
+  }
+}
+
+/* Phones */
+@media only screen and (max-width: 767px) {
+  #top .container {
+    padding: 0 0 80px;
+  }
+
+  #top .info .logo-square {
+    display: none;
+  }
+
+  #top .img .background-img {
+    height: 100vh;
+  }
 }
