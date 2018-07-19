@@ -152,6 +152,10 @@
   display: block;
 }
 
+#experience-section .experience-container .info.skills .info-box {
+  width: 75%;
+}
+
 #experience-section .experience-container .info.skills .info-box .date {
   color: #ffc853;
 }
