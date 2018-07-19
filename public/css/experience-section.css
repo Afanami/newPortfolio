@@ -15,6 +15,7 @@
 #experience-section .experience-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 #experience-section .experience-container .large-icons .square {
@@ -127,6 +128,14 @@
   display: block;
 }
 
+#experience-section .experience-container .info.skills .info-box .date {
+  color: #ffc853;
+}
+
+#experience-section .experience-container .info.work .info-box .date {
+  color: #ff5253;
+}
+
 #experience-section .experience-container .info .info-box p {
   color: #b2b2b4;
   font-size: 1rem;
@@ -135,4 +144,59 @@
   display: block;
   line-height: 1.5;
   letter-spacing: 1px;
+}
+
+#experience-section .experience-container .info.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  transition: all 0.3s ease-in-out;
+}
+
+#experience-section .experience-container .info.education .info-box,
+#experience-section .experience-container .info.skills .info-box,
+#experience-section .experience-container .info.work .info-box {
+  background: rgba(255, 255, 255, 0);
+  transition: all 0.4s ease;
+  text-align: center;
+}
+
+#experience-section .experience-container .info.education .info-box:hover {
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 0px 74px 16px rgba(82, 183, 255, 0.3);
+  -moz-box-shadow: 0px 0px 74px 16px rgba(82, 183, 255, 0.3);
+  box-shadow: 0px 0px 74px 16px rgba(82, 183, 255, 0.3);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+#experience-section .experience-container .info.skills .info-box:hover {
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 0px 74px 16px rgba(255, 200, 83, 0.3);
+  -moz-box-shadow: 0px 0px 74px 16px rgba(255, 200, 83, 0.3);
+  box-shadow: 0px 0px 74px 16px rgba(255, 200, 83, 0.3);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+#experience-section .experience-container .info.work .info-box:hover {
+  background: rgba(255, 255, 255, 1);
+  -webkit-box-shadow: 0px 0px 74px 16px rgba(255, 82, 83, 0.3);
+  -moz-box-shadow: 0px 0px 74px 16px rgba(255, 82, 83, 0.3);
+  box-shadow: 0px 0px 74px 16px rgba(255, 82, 83, 0.3);
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+#experience-section .experience-container .info.skills .info-box h4 {
+  position: relative;
+  top: 20%;
+  padding-bottom: 2px;
+  border-bottom: 1px solid #ffc853;
+  margin-left: 25%;
+  width: 50%;
+}
+
+#experience-section .experience-container .info.work {
+  position: relative;
+  top: 20%;
 }
