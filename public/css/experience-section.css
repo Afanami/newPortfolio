@@ -220,15 +220,121 @@
   position: relative;
   top: 20%;
 }
+@media only screen and (max-width: 1100px) {
+  #experience-section .large-title {
+    left: 0;
+  }
+
+  #experience-section .experience-container .large-icons .circle {
+    left: 30px;
+  }
+}
 
 /* Tablets */
 @media only screen and (max-width: 960px) {
+  #experience-section .large-title {
+    font-size: 3rem;
+    left: 0;
+  }
+
   #experience-section .experience-container {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    grid-area: wrap;
+  }
+
+  #experience-section .experience-container h2 {
+    margin-top: 40px;
+    width: 6%;
+  }
+
+  #experience-section .experience-container .large-icons {
+    margin-left: 100px;
+  }
+
+  #experience-section .experience-container .large-icons .square {
+    top: 10px;
+    left: 200px;
+  }
+
+  #experience-section .experience-container .large-icons .circle {
+    left: 200px;
+    top: 200px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  #experience-section .experience-container .large-icons {
+    margin-left: 5%;
+  }
+  #experience-section .experience-container .large-icons .square {
+    top: 75px;
+    left: 40px;
+  }
+
+  #experience-section .experience-container .large-icons .circle {
+    left: 90px;
+    top: 150px;
+  }
+
+  #experience-section .experience-container .large-icons .triangle {
+    left: 90px;
   }
 }
 
 /* Phones */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
+  #experience-section .experience-container .large-icons {
+    margin-left: 10%;
+  }
+
+  #experience-section .experience-container .large-icons .square {
+    top: 75px;
+    left: 40px;
+  }
+
+  #experience-section .experience-container .large-icons .circle {
+    left: 30px;
+    top: 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  #experience-section .experience-container .large-icons .triangle {
+    left: 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #experience-section .experience-container .info.skills {
+    margin-top: -120px;
+  }
+}
+@media only screen and (max-width: 400px) {
+  #experience-section .large-title {
+    font-size: 2rem;
+  }
+
+  #experience-section .experience-container .large-icons {
+    margin-left: 0;
+  }
+
+  #experience-section .experience-container h2 {
+    font-size: 1.3rem;
+  }
+
+  #experience-section .experience-container .info .info-box h4 {
+    font-size: 0.8rem;
+  }
+
+  #experience-section .experience-container .info .info-box .date {
+    font-size: 0.75rem;
+  }
+
+  #experience-section .experience-container .info .info-box p {
+    font-size: 0.7rem;
+  }
+
+  #experience-section .experience-container .info.skills {
+    margin-top: -200px;
+  }
 }
