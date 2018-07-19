@@ -4,7 +4,7 @@
 
 #experience-section .large-title {
   color: #c6e4ff;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 4.5rem;
   text-align: center;
   text-transform: uppercase;
@@ -16,6 +16,30 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
+}
+
+#experience-section .experience-container h2 {
+  display: block;
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  width: 4%;
+  padding-bottom: 3px;
+  margin-bottom: 25px;
+}
+
+#experience-section .experience-container .info.education h2 {
+  border-bottom-color: #52b8ff;
+}
+
+#experience-section .experience-container .info.skills h2 {
+  border-bottom-color: #ffc853;
+}
+
+#experience-section .experience-container .info.work h2 {
+  border-bottom-color: #ff5253;
 }
 
 #experience-section .experience-container .large-icons .square {
@@ -113,7 +137,7 @@
 #experience-section .experience-container .info .info-box h4 {
   color: #16171c;
   font-size: 1.2rem;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -146,9 +170,10 @@
   letter-spacing: 1px;
 }
 
-#experience-section .experience-container .info.skills {
+#experience-section .experience-container .info.skills .info-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -157,7 +182,7 @@
 #experience-section .experience-container .info.work .info-box {
   background: rgba(255, 255, 255, 0);
   transition: all 0.4s ease;
-  text-align: center;
+  text-align: left;
 }
 
 #experience-section .experience-container .info.education .info-box:hover {
@@ -188,12 +213,7 @@
 }
 
 #experience-section .experience-container .info.skills .info-box h4 {
-  position: relative;
-  top: 20%;
-  padding-bottom: 2px;
-  border-bottom: 1px solid #ffc853;
-  margin-left: 25%;
-  width: 50%;
+  width: 100%;
 }
 
 #experience-section .experience-container .info.work {
