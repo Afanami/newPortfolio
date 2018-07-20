@@ -167,4 +167,18 @@
 
 /* Phones */
 @media only screen and (max-width: 767px) {
+  #projects .projects-container .box.project1 .image {
+    background: url(../img/premiumfoodsmall.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #projects .projects-container .box.project3 .image {
+    background: url(../img/yelperiasmall.jpeg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+  }
 }
