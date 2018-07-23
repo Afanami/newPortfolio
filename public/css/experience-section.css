@@ -165,13 +165,11 @@
 }
 
 #experience-section .experience-container .info .info-box p {
-  color: #b2b2b4;
+  color: #494646;
   font-size: 1rem;
   font-weight: 300;
-  text-transform: capitalize;
   display: block;
   line-height: 1.5;
-  letter-spacing: 1px;
 }
 
 #experience-section .experience-container .info.skills .info-container {
