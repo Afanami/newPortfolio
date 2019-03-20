@@ -219,8 +219,8 @@
 }
 
 #experience-section .experience-container .info.work {
-  position: relative;
-  top: 20%;
+  /* position: relative; */
+  /* top: 20px; */
 }
 @media only screen and (max-width: 1100px) {
   #experience-section .large-title {
